@@ -17,7 +17,7 @@ PXP_LOG_DIR_CYGPATH = '/cygdrive/c/ProgramData/PuppetLabs/pxp-agent/var/log'
 PXP_LOG_DIR_POSIX = '/var/log/puppetlabs/pxp-agent'
 
 # Set lein profile based on configuration to access puppet.net internal network or not.
-LEIN_PROFILE = (ENV['GEM_SOURCE'] =~ /puppetlabs.net/) ? 'internal-mirrors' : 'integration'
+LEIN_PROFILE = (ENV['GEM_SOURCE'] =~ /puppetlabs.net/) ? 'user' : 'integration'
 
 def logdir(host)
   windows?(host)?
